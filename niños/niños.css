@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+                    /*header*/
+header .principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header section p{
+    background-color: rgb(46, 46, 46);
+    color: hsl(36, 100%, 90%);
+}
+header .menu img{
+    width: 46px;
+    height: 46px;
+    text-decoration: none;  
+    color: black;
+}
+/*ARTICULOS A LA VENTA IMAGENES*/
+article img{
+    height: 60vh;
+}
+.articulos{
+    margin-bottom: 5vh;
+}
+.articulos h5{
+    font-size: 1rem;
+    text-decoration: underline yellow;
+}
+.articulos .card{
+    border: none;
+}
+.articulos .card a{
+    display: none;
+}
+.articulos .card:hover a{
+    display: flex;
+    animation: 3s;
+
+}
+/*filtros*/
+.chau{
+    display: none;
+}
+.filtros {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.filtros p{
+    text-align: center;
+    justify-content: center;
+}
+div .losFiltros{
+    display: none;
+}
+                    /*MENU BAJO*/
+.menubajo{
+    background-color: hsl(36, 100%, 90%);
+    color: rgb(46, 46, 46);
+
+}
+SECTION .tarjetas img{
+    width: 46px;
+    height: 46px;
+    margin: 2vw;
+}
+.menubajo a{
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+
+}
+                    /*REDES SOCIALES*/
+nav .redes img{
+    width: 46px;
+    height: 46px;
+}
+                    /*FOOTER*/
+footer{
+    background-color: rgb(46, 46, 46);
+    color: hsl(36, 100%, 90%);
+}
