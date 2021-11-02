@@ -47,35 +47,38 @@ main .imagenes a{
                 /*MODAL USUARIO*/
 .modal{
     background-color: rgba(128, 128, 128, .3);
-    align-items: center;
+    
 }
-body .modal-content{
+body .formulario{
     background-color: hsl(34, 57%, 70%);
     width: 30vw;
     height: 55vh;
     overflow: hidden;
     display: flex;
     flex-shrink: initial;
-
 }
 .modal-body .partes{
     padding: 0;
+}
+.cuadro .modal-dialog{
+    display: flex;
+
 }
 .partes{
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    width: 100%;
 }
 .formulario .partes input, p{
     align-items: center;
 }
-.partes .btn{
+.partes .btnusuario{
     display: block;
     width: 100%;
     background-color: rgb(184, 165, 89);
     color: rgb(0, 0, 0);
-
 }
 .formulario .partes p{
     font-size: .8rem;
@@ -106,6 +109,10 @@ nav .redes img{
     width: 46px;
     height: 46px;
 }
+nav .redes{
+    display: flex;
+    justify-content: space-between;
+}
                     /*FOOTER*/
 footer{
     background-color: rgb(46, 46, 46);
@@ -131,5 +138,6 @@ footer{
    body .modal-content{
         width: 80vw;
         height: 53vh;
+
     }
 }
