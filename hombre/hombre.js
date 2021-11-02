@@ -1,27 +1,47 @@
+//              MODAL USUARIO
+const abrir = document.querySelector("#contacto")
+
+function abreModal(){
+    abrir.style.display = "flex"
+}
+function cierraModal(){
+    abrir.style.display = "none"
+}
+//            CARRITO DE COMPRAS
+
+//                   CHAT
+
+                 //FILTROS
+let arriba1 = document.querySelectorAll(".arriba");
+let conjunto1 = document.querySelectorAll(".conjuntos");
+let abajo1 = document.querySelectorAll(".abajo");
+
 function abajo(){
-    let arriba = document.querySelectorAll(".arriba");
-    for(var i = 0; i< arriba.length; i++)
-    arriba[i].classList.toggle("chau")
-    let conjunto = document.querySelectorAll(".conjuntos");
-    for(var i = 0; i< conjunto.length; i++)
-    conjunto[i].classList.toggle("chau")
+    for(var i = 0; i< arriba1.length; i++)
+    arriba1[i].classList.toggle("chau");
+    for(var i = 0; i< conjunto1.length; i++)
+    conjunto1[i].classList.toggle("chau")
 }
 function arriba(){
-    let abajo = document.querySelectorAll(".abajo");
-    for(var i = 0; i< abajo.length; i++)
-    abajo[i].classList.toggle("chau")
-    let conjunto = document.querySelectorAll(".conjuntos");
-    for(var i = 0; i< conjunto.length; i++)
-    conjunto[i].classList.toggle("chau")
+    for(var i = 0; i< abajo1.length; i++)
+    abajo1[i].classList.toggle("chau");
+    for(var i = 0; i< conjunto1.length; i++)
+    conjunto1[i].classList.toggle("chau")
 }
 function conjunto(){
-    let abajo = document.querySelectorAll(".abajo");
-    for(var i = 0; i< abajo.length; i++)
-    abajo[i].classList.toggle("chau")
-    let arriba = document.querySelectorAll(".arriba");
-    for(var i = 0; i< arriba.length; i++)
-    arriba[i].classList.toggle("chau")
+    for(var i = 0; i< abajo1.length; i++)
+    abajo1[i].classList.toggle("chau");
+    for(var i = 0; i< arriba1.length; i++)
+    arriba1[i].classList.toggle("chau")
 }
-function filtros(){
-    document.querySelector(".losFiltros").style.display = "flex"
-}
+            //BOTON DE FILTRO
+let botonFiltro = document.querySelector(".botonFiltro");
+let filtros = document.querySelector(".losFiltros");
+botonFiltro.addEventListener("click", function(){
+   if(filtros.classList.contains("losFiltros")){
+       filtros.classList.remove("losFiltros")
+       filtros.classList.add("seVe")
+   }else{
+        filtros.classList.add("losFiltros")
+   }
+})

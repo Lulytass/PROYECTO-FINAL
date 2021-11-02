@@ -17,14 +17,37 @@
         </section>
         <nav class="row principal">
             <img class="logo col-sm-12 col-md-9 col-lg-9" src="../imagenes/logo.png" alt="">
-            <a class="menu col-sm-4 col-md-1 col-lg-1" href=""><img src="../imagenes/chat.png" alt=""></a>
-            <a class="menu col-sm-4 col-md-1 col-lg-1" href=""><img src="../imagenes/usuario.png" alt=""></a>
-            <a class="menu col-sm-4 col-md-1 col-lg-1" href=""><img src="../imagenes/canasto.png" alt=""></a>
+            <div class="menu col-sm-12 col-md-3 col-lg-3">
+                <img src="../imagenes/chat.png" alt="">
+                <img onclick="abreModal()" src="../imagenes/usuario.png" alt="">
+                <img src="../imagenes/canasto.png" alt="">
+            </div>    
         </nav>
     </header>
+    <!--MODAL USUARIO-->
+    <div class="modal cuadro" id="contacto" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content  formulario">
+            <div class="modal-header partes">
+            <h5 class="modal-title">ACCEDÉ A TU CUENTA</h5>
+            </div>
+            <div class="modal-body partes">
+            <form class="partes">
+                <input type="email" placeholder="Mail"> <br>
+                <input type="password" placeholder="Password">
+            </form>
+            <p>Aun no tenes Usuario? <a href="#">REGISTRATE AHORA</a></p>
+            </div>
+            <div class="modal-footer partes">
+            <input class="btn partes" type="button" value="ENVIAR">
+            <input onclick="cierraModal()" type="button" class="btn cerrarModal" value="CERRAR">
+            </div>
+        </div>
+        </div>
+    </div>
     <!--FILTROS-->
     <div class="container">
-        <button onclick="filtros()" type="button" class="btn btn-outline-danger">Filtros</button>
+        <button type="button" class="btn botonFiltro btn-outline-danger">Filtros</button>
         <div class="losFiltros row">
             <p class="col-sm-3 col-md-3 col-lg-3">
                 Partes de arriba<input onclick="arriba()" type="checkbox">
@@ -46,76 +69,269 @@
             <div class="arriba card col-sm-12 col-md-4 col-lg-3">
                 <img src="imagenesmujer/9.jpg" class="card-img-top" alt="ropa mujer">
                 <div class="card-body">
-                <h5 class="card-title">PULLOVER</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning">COMPRAR</button>                </div>
+                    <h5 class="card-title">JEAN</h5>
+                    <div>
+                        <h6>Colores</h6>
+                        <select name="OS">
+                            <option value="1">Negro</option> 
+                            <option value="2">Azul</option> 
+                            <option value="3">Verde</option>
+                            <option value="10">Maiz</option> 
+                            <option value="11">Rojo</option> 
+                            <option value="12">Bordo</option> 
+                        </select>
+                    </div> 
+                    <div>
+                        <h6>Talle</h6>
+                        <select name="OS">
+                            <option >S</option> 
+                            <option >M</option> 
+                            <option >L</option>
+                            <option >XL</option> 
+                        </select>
+                    </div>
+                    <div class="precio">
+                        <p>$1200</p>
+                    </div>     
+                    <button type="button" class="btn btn-secondary">Comprar</button>                
+                </div>
             </div>
             <div class="abajo card col-sm-12 col-md-4 col-lg-3">
                 <img src="imagenesmujer/11.jpg" class="card-img-top" alt="ropa mujer">
                 <div class="card-body">
-                <h5 class="card-title">JEAN</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning">COMPRAR</button>                </div>
+                    <h5 class="card-title">JEAN</h5>
+                    <div>
+                        <h6>Colores</h6>
+                        <select name="OS">
+                            <option value="1">Negro</option> 
+                            <option value="2">Azul</option> 
+                            <option value="3">Verde</option>
+                            <option value="10">Maiz</option> 
+                            <option value="11">Rojo</option> 
+                            <option value="12">Bordo</option> 
+                        </select>
+                    </div> 
+                    <div>
+                        <h6>Talle</h6>
+                        <select name="OS">
+                            <option >S</option> 
+                            <option >M</option> 
+                            <option >L</option>
+                            <option >XL</option> 
+                        </select>
+                    </div> 
+                    <div class="precio">
+                        <p>$1200</p>
+                    </div>     
+                    <button type="button" class="btn btn-secondary">Comprar</button>                
+                </div>
             </div>
             <div class="arriba card col-sm-12 col-md-4 col-lg-3">
                 <img src="imagenesmujer/12.jpg" class="card-img-top" alt="ropa mujer">
                 <div class="card-body">
-                <h5 class="card-title">CAMISA</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning">COMPRAR</button>                </div>
+                    <h5 class="card-title">JEAN</h5>
+                    <div>
+                        <h6>Colores</h6>
+                        <select name="OS">
+                            <option value="1">Negro</option> 
+                            <option value="2">Azul</option> 
+                            <option value="3">Verde</option>
+                            <option value="10">Maiz</option> 
+                            <option value="11">Rojo</option> 
+                            <option value="12">Bordo</option> 
+                        </select>
+                    </div>
+                    <div>
+                        <h6>Talle</h6>
+                        <select name="OS">
+                            <option >S</option> 
+                            <option >M</option> 
+                            <option >L</option>
+                            <option >XL</option> 
+                        </select>
+                    </div>
+                    <div class="precio">
+                        <p>$1200</p>
+                    </div>     
+                    <button type="button" class="btn btn-secondary">Comprar</button>                
+                </div>
             </div>
             <div class="arriba card col-sm-12 col-md-4 col-lg-3">
                 <img src="imagenesmujer/13.jpg" class="card-img-top" alt="ropa mujer">
                 <div class="card-body">
-                <h5 class="card-title">CAMISA</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning">COMPRAR</button>                </div>
+                    <h5 class="card-title">JEAN</h5>
+                    <div>
+                        <h6>Colores</h6>
+                        <select name="OS">
+                            <option value="1">Negro</option> 
+                            <option value="2">Azul</option> 
+                            <option value="3">Verde</option>
+                            <option value="10">Maiz</option> 
+                            <option value="11">Rojo</option> 
+                            <option value="12">Bordo</option> 
+                        </select>
+                    </div> 
+                    <div>
+                        <h6>Talle</h6>
+                        <select name="OS">
+                            <option >S</option> 
+                            <option >M</option> 
+                            <option >L</option>
+                            <option >XL</option> 
+                        </select>
+                    </div>
+                    <div class="precio">
+                        <p>$1200</p>
+                    </div>     
+                    <button type="button" class="btn btn-secondary">Comprar</button>                
+                </div>
             </div>
             <div class="conjuntos card col-sm-12 col-md-4 col-lg-3">
                 <img src="imagenesmujer/5.jpg" class="card-img-top" alt="ropa mujer">
                 <div class="card-body">
-                <h5 class="card-title">CONJUNTO</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning">COMPRAR</button>                </div>
+                    <h5 class="card-title">JEAN</h5>
+                    <div>
+                        <h6>Colores</h6>
+                        <select name="OS">
+                            <option value="1">Negro</option> 
+                            <option value="2">Azul</option> 
+                            <option value="3">Verde</option>
+                            <option value="10">Maiz</option> 
+                            <option value="11">Rojo</option> 
+                            <option value="12">Bordo</option> 
+                        </select>  
+                    </div>  
+                    <div>
+                        <h6>Talle</h6>
+                        <select name="OS">
+                            <option >S</option> 
+                            <option >M</option> 
+                            <option >L</option>
+                            <option >XL</option> 
+                        </select>
+                    </div>
+                    <div class="precio">
+                        <p>$1200</p>
+                    </div>     
+                    <button type="button" class="btn btn-secondary">Comprar</button>                
+                </div>
             </div>
             <div class="arriba card col-sm-12 col-md-4 col-lg-3">
                 <img src="imagenesmujer/6.jpeg" class="card-img-top" alt="ropa mujer">
                 <div class="card-body">
-                <h5 class="card-title">SAQUITO</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning">COMPRAR</button>                </div>
+                    <h5 class="card-title">JEAN</h5>
+                    <div>
+                        <h6>Colores</h6>
+                        <select name="OS">
+                            <option value="1">Negro</option> 
+                            <option value="2">Azul</option> 
+                            <option value="3">Verde</option>
+                            <option value="10">Maiz</option> 
+                            <option value="11">Rojo</option> 
+                            <option value="12">Bordo</option> 
+                        </select>  
+                    </div>  
+                    <div>
+                        <h6>Talle</h6>
+                        <select name="OS">
+                            <option >S</option> 
+                            <option >M</option> 
+                            <option >L</option>
+                            <option >XL</option> 
+                        </select>
+                    </div> 
+                    <div class="precio">
+                        <p>$1200</p>
+                    </div>     
+                    <button type="button" class="btn btn-secondary">Comprar</button>                
+                </div>
             </div>
             <div class="malla card col-sm-12 col-md-4 col-lg-3">
                 <img src="imagenesmujer/7.jpg" class="card-img-top" alt="ropa mujer">
                 <div class="card-body">
-                <h5 class="card-title">MALLA</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning">COMPRAR</button>                </div>
+                    <h5 class="card-title">JEAN</h5>
+                    <div>
+                        <h6>Colores</h6>
+                        <select name="OS">
+                            <option value="1">Negro</option> 
+                            <option value="2">Azul</option> 
+                            <option value="3">Verde</option>
+                            <option value="10">Maiz</option> 
+                            <option value="11">Rojo</option> 
+                            <option value="12">Bordo</option> 
+                        </select> 
+                    </div>   
+                    <div>
+                        <h6>Talle</h6>
+                        <select name="OS">
+                            <option >S</option> 
+                            <option >M</option> 
+                            <option >L</option>
+                            <option >XL</option> 
+                        </select>
+                    </div> 
+                                         <div class="precio">
+                        <p>$1200</p>
+                    </div>      
+                    <button type="button" class="btn btn-secondary">Comprar</button>                
+                </div>
             </div>
             <div class="conjuntos card col-sm-12 col-md-4 col-lg-3">
                 <img src="imagenesmujer/8.jpg" class="card-img-top" alt="ropa mujer">
                 <div class="card-body">
-                <h5 class="card-title">TRAJE</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning">COMPRAR</button>                </div>
+                    <h5 class="card-title">JEAN</h5>
+                    <div>
+                        <h6>Colores</h6>
+                        <select name="OS">
+                            <option value="1">Negro</option> 
+                            <option value="2">Azul</option> 
+                            <option value="3">Verde</option>
+                            <option value="10">Maiz</option> 
+                            <option value="11">Rojo</option> 
+                            <option value="12">Bordo</option> 
+                        </select>  
+                    </div>  
+                    <div>
+                        <h6>Talle</h6>
+                        <select name="OS">
+                            <option >S</option> 
+                            <option >M</option> 
+                            <option >L</option>
+                            <option >XL</option> 
+                        </select>
+                    </div> 
+                    <div class="precio">
+                        <p>$1200</p>
+                    </div>     
+                    <button type="button" class="btn btn-secondary">Comprar</button>                
+                </div>
             </div>
-        </article>         <!--MENU BAJO-->
+        </article>        
+         <!--MENU BAJO-->
         <section class="row menubajo">
-            <a class="col-sm-6 col-md-4 col-lg-4" href="#">Preguntas Frecuentes</a>
-            <a class="col-sm-6 col-md-4 col-lg-4" href="#">Formas de Pago</a>
-            <a class="col-sm-6 col-md-4 col-lg-4" href="#">Ubicacion</a>
-            <a class="col-sm-6 col-md-4 col-lg-4" href="#">Pago Seguro</a>
-            <div class="tarjetas col-sm-6 col-md-4 col-lg-4"><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""></div>
-            <iframe class="col-sm-6 col-md-4 col-lg-4" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.141330623734!2d-58.4499964!3d-34.6095894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b086e48cf2ee5e2!2sEscuela%20Superior%20de%20Comercio%20N%C2%B0%203%20DE%207%20Hip%C3%B3lito%20Vieytes!5e0!3m2!1ses-419!2sar!4v1635261931078!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <a class="col-sm-6 col-md-4 col-lg-4" href="#">Terminos & Condiciones</a>
+            <div class=" columna1 col-sm-12 col-md-4 col-lg-4">
+                <a  href="#">Preguntas Frecuentes</a>
+                <a href="#">Pago Seguro</a>
+                <a href="#">Terminos & Condiciones</a>
+            </div>
+            <DIv class="mapa col-sm-12 col-md-4 col-lg-4">
+                <P>Ubicacion</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.141330623734!2d-58.4499964!3d-34.6095894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b086e48cf2ee5e2!2sEscuela%20Superior%20de%20Comercio%20N%C2%B0%203%20DE%207%20Hip%C3%B3lito%20Vieytes!5e0!3m2!1ses-419!2sar!4v1635261931078!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </DIv>
+            <DIV class="tarjetas col-sm-12 col-md-4 col-lg-4">
+                <p>Formas de Pago</p>
+                <div><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""><img src="../imagenes/card.png" alt=""></div>
+            </DIV>
         </section>
         <hr>
         <!--REDES SOCIALES-->
         <nav class="row">
             <h3 class="col-sm-12 col-md-12 col-lg-12">Nuestras Redes</h3>
-            <a class="redes text-center col-sm-4 col-md-4 col-lg-4" href="#"><img src="../imagenes/twitter.png" alt=""></a>
-            <a class="redes text-center col-sm-4 col-md-4 col-lg-4" href="#"><img src="../imagenes/instagram.png" alt=""></a>
-            <a class="redes text-center col-sm-4 col-md-4 col-lg-4" href="#"><img src="../imagenes/facebook.png" alt=""></a>
+            <div class="redes">
+                <a class=" text-center col-sm-4 col-md-4 col-lg-4" href="#"><img src="../imagenes/twitter.png" alt=""></a>
+                <a class=" text-center col-sm-4 col-md-4 col-lg-4" href="#"><img src="../imagenes/instagram.png" alt=""></a>
+                <a class=" text-center col-sm-4 col-md-4 col-lg-4" href="#"><img src="../imagenes/facebook.png" alt=""></a>
+            </div>  
         </nav>
         <hr>
     </main>

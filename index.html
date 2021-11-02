@@ -17,9 +17,9 @@
         </section>
         <nav class="row principal">
             <img class="logo col-sm-12 col-md-9 col-lg-9" src="imagenes/logo.png" alt="">
-            <a class="menu col-sm-4 col-md-1 col-lg-1" href=""><img src="imagenes/chat.png" alt=""></a>
-            <a class="menu col-sm-4 col-md-1 col-lg-1" href=""><img src="imagenes/usuario.png" alt=""></a>
-            <a class="menu col-sm-4 col-md-1 col-lg-1" href=""><img src="imagenes/canasto.png" alt=""></a>
+            <div class="menu col-sm-4 col-md-1 col-lg-1"><img src="imagenes/chat.png" alt=""></div>
+            <div class="menu col-sm-4 col-md-1 col-lg-1"><img onclick="abreModal()" src="imagenes/usuario.png" alt=""></div>
+            <div class="menu col-sm-4 col-md-1 col-lg-1"><img src="imagenes/canasto.png" alt=""></div>
         </nav>
     </header> 
     <!--MODAL CONTACTO-->
@@ -29,7 +29,26 @@
 
 
     <!--MODAL USUARIO-->
-
+    <div class="modal cuadro" id="contacto" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content  formulario">
+            <div class="modal-header partes">
+            <h5 class="modal-title">ACCEDÉ A TU CUENTA</h5>
+            </div>
+            <div class="modal-body partes">
+            <form class="partes">
+                <input type="email" placeholder="Mail"> <br>
+                <input type="password" placeholder="Password">
+            </form>
+            <p>Aun no tenes Usuario? <a href="#">REGISTRATE AHORA</a></p>
+            </div>
+            <div class="modal-footer partes">
+            <input class="btn partes" type="button" value="ENVIAR">
+            <input onclick="cierraModal()" type="button" class="btn cerrarModal" value="CERRAR">
+            </div>
+        </div>
+        </div>
+    </div>
     <!--IMAGENES SECCIONES-->
     <main class="container">
         <nav class="row imagenes">
@@ -62,5 +81,6 @@
     <footer class="row">
         <p class=" text-center col-sm-12 col-md-12 col-lg-12">Lucia Soledad Tassi</p>  
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -22,8 +22,50 @@ header .menu img{
     height: 46px;
     text-decoration: none;  
     color: black;
-}
 
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+                /*MODAL USUARIO*/
+.modal{
+    background-color: rgba(128, 128, 128, .3);
+    align-items: center;
+}
+body .modal-content{
+    background-color: hsl(34, 57%, 70%);
+    width: 25vw;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: initial;
+}
+.modal-body .partes{
+    padding: 0;
+}
+.partes{
+    display: flex;
+    flex-direction: column;
+}
+.formulario .partes input, p{
+    align-items: center;
+}
+.partes .btn{
+    display: block;
+    width: 100%;
+    background-color: rgb(184, 165, 89);
+    color: rgb(0, 0, 0);
+
+}
+.formulario .partes p{
+    font-size: .8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+.cuadro h5{
+    font-size: 1rem;
+}
 /*ARTICULOS A LA VENTA IMAGENES*/
 article img{
     height: 60vh;
@@ -38,17 +80,32 @@ article img{
 .articulos .card{
     border: none;
 }
-.articulos .card a{
-    display: none;
-}
-.articulos .card:hover a{
+.precio{
     display: flex;
-    animation: 3s;
+    justify-content: right;
+    transition: 2s;
 
+}
+.precio p{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.articulos .card:hover .precio{
+    justify-content: center;
+    text-shadow: rgb(151, 151, 151) 2px 2px 1px;
+}
+
+.card-body .btn{
+    margin-top: 5px;
+    width: 100%;
 }
 /*filtros*/
 .chau{
     display: none;
+}
+.seVe{
+    display: flex;
 }
 .filtros {
     display: inline-flex;
@@ -79,13 +136,46 @@ SECTION .tarjetas img{
     color: rgb(46, 46, 46);
 
 }
+.columna1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
                     /*REDES SOCIALES*/
 nav .redes img{
     width: 46px;
     height: 46px;
 }
+nav .redes{
+    display: flex;
+    justify-content: space-between;
+}
                     /*FOOTER*/
 footer{
     background-color: rgb(46, 46, 46);
     color: hsl(36, 100%, 90%);
+}
+                    /*MEDIAS*/
+@media (max-width: 769px) {
+    .tarjetas, .columna1, .mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .columna1 a{
+        display: block;
+        align-self: center;
+    }
+    .tarjetas p, div{
+        align-self: center;
+    }
+    .mapa p, iframe{
+        align-self: center;
+    }
+    .card-body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
