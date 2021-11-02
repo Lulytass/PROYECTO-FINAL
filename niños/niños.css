@@ -104,6 +104,9 @@ article img{
 .chau{
     display: none;
 }
+.seVe{
+    display: flex;
+}
 .filtros {
     display: inline-flex;
     text-align: center;

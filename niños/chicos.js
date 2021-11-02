@@ -12,42 +12,42 @@ function cierraModal(){
 //                   CHAT
 
 //                 FILTROS
-let arriba = document.querySelectorAll(".arriba");
-let conjunto = document.querySelectorAll(".conjunto");
-let vestido = document.querySelectorAll(".vestido");
-let abajo = document.querySelectorAll(".abajo");
+let arriba1 = document.querySelectorAll(".arriba");
+let conjunto1 = document.querySelectorAll(".conjunto");
+let vestido1 = document.querySelectorAll(".vestido");
+let abajo1 = document.querySelectorAll(".abajo");
 
 function abajo(){
-    for(var i = 0; i< arriba.length; i++)
-    arriba[i].classList.toggle("chau");
-    for(var i = 0; i< conjunto.length; i++)
-    conjunto[i].classList.toggle("chau");
-    for(var i = 0; i< vestido.length; i++)
-    vestido[i].classList.toggle("chau");
+    for(var i = 0; i< arriba1.length; i++)
+    arriba1[i].classList.toggle("chau");
+    for(var i = 0; i< conjunto1.length; i++)
+    conjunto1[i].classList.toggle("chau");
+    for(var i = 0; i< vestido1.length; i++)
+    vestido1[i].classList.toggle("chau");
 }
 function arriba(){
-    for(var i = 0; i< abajo.length; i++)
-    abajo[i].classList.toggle("chau")
-    for(var i = 0; i< conjunto.length; i++)
-    conjunto[i].classList.toggle("chau")
-    for(var i = 0; i< vestido.length; i++)
-    vestido[i].classList.toggle("chau")
+    for(var i = 0; i< abajo1.length; i++)
+    abajo1[i].classList.toggle("chau")
+    for(var i = 0; i< conjunto1.length; i++)
+    conjunto1[i].classList.toggle("chau")
+    for(var i = 0; i< vestido1.length; i++)
+    vestido1[i].classList.toggle("chau")
 }
 function conjunto(){
-    for(var i = 0; i< abajo.length; i++)
-    abajo[i].classList.toggle("chau");
-    for(var i = 0; i< arriba.length; i++)
-    arriba[i].classList.toggle("chau");
-    for(var i = 0; i< vestido.length; i++)
-    vestido[i].classList.toggle("chau");
+    for(var i = 0; i< abajo1.length; i++)
+    abajo1[i].classList.toggle("chau");
+    for(var i = 0; i< arriba1.length; i++)
+    arriba1[i].classList.toggle("chau");
+    for(var i = 0; i< vestido1.length; i++)
+    vestido1[i].classList.toggle("chau");
 }
 function vestido(){
-    for(var i = 0; i< abajo.length; i++)
-    abajo[i].classList.toggle("chau");
-    for(var i = 0; i< arriba.length; i++)
-    arriba[i].classList.toggle("chau");
-    for(var i = 0; i< conjunto.length; i++)
-    conjunto[i].classList.toggle("chau");
+    for(var i = 0; i< abajo1.length; i++)
+    abajo1[i].classList.toggle("chau");
+    for(var i = 0; i< arriba1.length; i++)
+    arriba1[i].classList.toggle("chau");
+    for(var i = 0; i< conjunto1.length; i++)
+    conjunto1[i].classList.toggle("chau");
 }
                 //BOTON FILTRO
 let botonFiltro = document.querySelector(".botonFiltro");
