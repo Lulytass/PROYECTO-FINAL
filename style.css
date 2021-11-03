@@ -6,6 +6,9 @@ html, body{
     margin: 0;
     padding: 0;
 }
+body{
+    min-width: 576px;
+}
 
                     /*header*/
 header .principal{
@@ -47,22 +50,18 @@ main .imagenes a{
                 /*MODAL USUARIO*/
 .modal{
     background-color: rgba(128, 128, 128, .3);
-    
 }
 body .formulario{
     background-color: hsl(34, 57%, 70%);
     width: 30vw;
-    height: 55vh;
+    height: 60vh;
     overflow: hidden;
     display: flex;
     flex-shrink: initial;
-}
-.modal-body .partes{
-    padding: 0;
+    justify-self: center;
 }
 .cuadro .modal-dialog{
     display: flex;
-
 }
 .partes{
     display: flex;
@@ -119,7 +118,7 @@ footer{
     color: hsl(36, 100%, 90%);
 }
                     /*MEDIAS*/
-@media (max-width: 769px) {
+@media (max-width: 767px) {
    .tarjetas, .columna1, .mapa{
        display: flex;
        flex-direction: column;
@@ -136,8 +135,10 @@ footer{
         align-self: center;
    }
    body .modal-content{
-        width: 1076px;
-        height: 322px;
+        width: 80vw;
+        height: 60vh;
         align-self: center;
+        justify-content: center;
+        overflow: auto
     }
 }
