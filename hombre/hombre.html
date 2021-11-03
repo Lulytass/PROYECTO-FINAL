@@ -20,7 +20,7 @@
             <div class="menu col-sm-12 col-md-3 col-lg-3">
                 <img src="../imagenes/chat.png" alt="">
                 <img onclick="abreModal()" src="../imagenes/usuario.png" alt="">
-                <img src="../imagenes/canasto.png" alt="">
+                <img onclick="abreModalCarrito()" src="../imagenes/canasto.png" alt="">
             </div>    
         </nav>
     </header>  
@@ -36,7 +36,9 @@
                     <input type="email" placeholder="Mail"> <br>
                     <input type="password" placeholder="Password">
                 </form>
-                <p>Aun no tenes Usuario? <a href="#">REGISTRATE AHORA</a></p>
+                <footer></footer>
+                    <p>Aun no tenes Usuario? <a href="#">REGISTRATE AHORA</a></p>
+                </footer>
             </div>
             <div class="modal-footer partes">
             <input class="btn btnusuario" type="button" value="ENVIAR">
@@ -45,6 +47,23 @@
         </div>
         </div>
     </div>
+    <!--MODAL CARRITO-->
+    <div class="modal" id="carrito" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">CARRITO DE COMPRAS</h5>
+              <button onclick="cierraModalCarrito()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>PROXIMAMENTE VAS A PODER HACER TUS COMPRAS DE MANERA ONLINE</p>
+            </div>
+            <div class="modal-footer">
+              <button onclick="cierraModalCarrito()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!--FILTROS-->
     <div class="container">
         <button type="button" class="btn botonFiltro btn-outline-danger">Filtros</button>
