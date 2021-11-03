@@ -208,6 +208,11 @@ footer{
         height: 90vh;
         overflow: auto
     }
+    .modal .modal-dialog .modalCarrito{
+        width: 75vw;
+        height: 70vh;
+
+    }
     .card-body {
         width: 100%;
     }
@@ -219,7 +224,7 @@ footer{
     }
     .modal .modal-dialog .modalCarrito{
         width: 75vw;
-        height: 45vh;
+        height: 35vh;
 
     }
 }
