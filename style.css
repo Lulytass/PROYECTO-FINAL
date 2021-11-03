@@ -9,7 +9,6 @@ html, body{
 body{
     min-width: 576px;
 }
-
                     /*header*/
 header .principal{
     display: flex;
@@ -136,9 +135,9 @@ footer{
    }
    body .modal-content{
         width: 80vw;
-        height: 60vh;
+        height: 70vh;
         align-self: center;
-        justify-content: center;
+        justify-self: center;
         overflow: auto
     }
 }

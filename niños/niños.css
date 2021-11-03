@@ -6,7 +6,9 @@ html, body{
     margin: 0;
     padding: 0;
 }
-
+body{
+    min-width: 576px;
+}
                     /*header*/
 header .principal{
     display: flex;
@@ -31,30 +33,30 @@ header .menu img{
                 /*MODAL USUARIO*/
 .modal{
     background-color: rgba(128, 128, 128, .3);
-    align-items: center;
 }
 body .modal-content{
     background-color: hsl(34, 57%, 70%);
     width: 30vw;
-    height: 55vh;
+    height: 60vh;
     overflow: hidden;
     display: flex;
     flex-shrink: initial;
-
+    justify-self: center;
 }
-.modal-body .partes{
-    padding: 0;
+.cuadro .modal-dialog{
+    display: flex;
 }
 .partes{
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    width: 100%;
 }
 .formulario .partes input, p{
     align-items: center;
 }
-.partes .btn{
+.partes .btnusuario{
     display: block;
     width: 100%;
     background-color: rgb(184, 165, 89);
@@ -175,14 +177,12 @@ footer{
     .mapa p, iframe{
          align-self: center;
     }
-    .card-body{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+
     body .modal-content{
         width: 80vw;
-        height: 53vh;
+        height: 70vh;
+        align-self: center;
+        justify-self: center;
+        overflow: auto
     }
 }
