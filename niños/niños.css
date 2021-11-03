@@ -41,7 +41,7 @@ header .menu img{
 body .modal-content{
     background-color: hsl(34, 57%, 70%);
     width: 30vw;
-    height: 60vh;
+    height: 50vh;
     overflow: hidden;
     display: flex;
     flex-shrink: initial;
@@ -191,7 +191,7 @@ footer{
 
     body .modal-content{
         width: 80vw;
-        height: 70vh;
+        height: 90vh;
         overflow: auto
     }
     .card-body {
