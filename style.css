@@ -136,8 +136,8 @@ footer{
         align-self: center;
    }
    body .modal-content{
-        width: 80vw;
-        height: 53vh;
-
+        width: 1076px;
+        height: 322px;
+        align-self: center;
     }
 }
