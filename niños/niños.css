@@ -41,7 +41,7 @@ header .menu img{
 body .modal-content{
     background-color: hsl(34, 57%, 70%);
     width: 30vw;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
     display: flex;
     flex-shrink: initial;
@@ -80,6 +80,20 @@ body .modal-content{
     font-size: 1rem;
     font-family: 'Zen Antique', serif;
 
+}
+                /*MODAL CARRITO*/
+.modal .modal-dialog .modalCarrito{
+    background-color: hsl(34, 57%, 70%);
+    width: 30vw;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: initial;
+    justify-self: center;
+    justify-content: center;
+}
+.modalCarrito p{
+    text-align: center;
 }
 /*ARTICULOS A LA VENTA IMAGENES*/
 article img{
@@ -196,5 +210,16 @@ footer{
     }
     .card-body {
         width: 100%;
+    }
+}
+@media (max-width: 575px){
+    body .modal-content{
+        width: 80vw;
+        height: 60vh;
+    }
+    .modal .modal-dialog .modalCarrito{
+        width: 75vw;
+        height: 45vh;
+
     }
 }

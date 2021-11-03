@@ -47,6 +47,20 @@ main .imagenes a{
     justify-content: center;
     align-items: center;
 }
+                /*MODAL CARRITO*/
+.modal .modal-dialog .modalCarrito{
+    background-color: hsl(34, 57%, 70%);
+    width: 30vw;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: initial;
+    justify-self: center;
+    justify-content: center;
+}
+.modalCarrito p{
+    text-align: center;
+}
                 /*MODAL USUARIO*/
 .modal{
     background-color: rgba(128, 128, 128, .3);
@@ -57,7 +71,7 @@ main .imagenes a{
 body .modal-content{
     background-color: hsl(34, 57%, 70%);
     width: 30vw;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
     display: flex;
     flex-shrink: initial;
@@ -150,5 +164,16 @@ footer{
     }
     main .secciones img{
         border-radius: 1rem 1rem;
+    }
+}
+@media (max-width: 575px){
+    body .modal-content{
+        width: 80vw;
+        height: 60vh;
+    }
+    .modal .modal-dialog .modalCarrito{
+        width: 75vw;
+        height: 45vh;
+
     }
 }
