@@ -59,6 +59,8 @@ body .modal-content{
 }
 .formulario .partes input, p{
     align-items: center;
+    font-family: 'Zen Antique', serif;
+
 }
 .partes .btnusuario{
     display: block;
@@ -71,9 +73,13 @@ body .modal-content{
     font-size: .8rem;
     margin-top: 1.5rem;
     margin-bottom: 0;
+    font-family: 'Zen Antique', serif;
+
 }
 .cuadro h5{
     font-size: 1rem;
+    font-family: 'Zen Antique', serif;
+
 }
 /*ARTICULOS A LA VENTA IMAGENES*/
 article img{
