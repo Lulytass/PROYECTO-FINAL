@@ -21,8 +21,6 @@ header section p{
     color: hsl(36, 100%, 90%);
 }
 header .menu img{
-    width: 46px;
-    height: 46px;
     text-decoration: none;  
     color: black;
 
@@ -36,14 +34,16 @@ header .menu img{
     background-color: hsl(34, 57%, 70%);
     width: 30vw;
     height: 40vh;
-    overflow: hidden;
     display: flex;
-    flex-shrink: initial;
     justify-self: center;
     justify-content: center;
 }
 .modalCarrito p{
     text-align: center;
+}
+.btncarrito{
+    background-color: rgb(184, 165, 89);
+    width: 100%;
 }
                 /*MODAL USUARIO*/
 .modal{
@@ -60,7 +60,6 @@ body .modal-content{
     display: flex;
     flex-shrink: initial;
     justify-self: center;
-
 }
 .cuadro .modal-dialog{
     display: flex;
@@ -75,31 +74,25 @@ body .modal-content{
 .formulario .partes input, p{
     align-items: center;
     font-family: 'Zen Antique', serif;
-
 }
 .partes .btnusuario{
     display: block;
     width: 100%;
     background-color: rgb(184, 165, 89);
     color: rgb(0, 0, 0);
-
 }
 .formulario .partes p{
     font-size: .8rem;
     margin-top: 1.5rem;
     margin-bottom: 0;
     font-family: 'Zen Antique', serif;
-
 }
-.cuadro h5{
+.cuadro, #carrito h5{
     font-size: 1rem;
     font-family: 'Zen Antique', serif;
 
 }
 /*ARTICULOS A LA VENTA IMAGENES*/
-article img{
-    height: 60vh;
-}
 .articulos{
     margin-bottom: 5vh;
 }
@@ -137,18 +130,11 @@ article img{
 .seVe{
     display: flex;
 }
-.filtros {
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-.filtros p{
-    text-align: center;
-    justify-content: center;
-}
 div .losFiltros{
     display: none;
+}
+.botonFiltro{
+    margin: 6px;
 }
                     /*MENU BAJO*/
 .menubajo{
@@ -156,10 +142,8 @@ div .losFiltros{
     color: rgb(46, 46, 46);
 
 }
-SECTION .tarjetas img{
-    width: 46px;
-    height: 46px;
-    margin: 2vw;
+section .tarjetas img{
+    margin: 2vh;
 }
 .menubajo a{
     text-decoration: none;
@@ -172,10 +156,6 @@ SECTION .tarjetas img{
     justify-content: space-around;
 }
                     /*REDES SOCIALES*/
-nav .redes img{
-    width: 46px;
-    height: 46px;
-}
 nav .redes{
     display: flex;
     justify-content: space-between;

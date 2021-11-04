@@ -21,14 +21,15 @@ header section p{
     color: hsl(36, 100%, 90%);
 }
 header .menu img{
-    width: 46px;
-    height: 46px;
     text-decoration: none;  
     color: black;
-
 }
-.menu{
+.menu ul li{
+ list-style: none;
+}
+.menu ul{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
                     /*IMAGENES SECCIONES*/
@@ -38,28 +39,43 @@ header .menu img{
 .imagenes .niños img{
     border-radius: 0 1rem 1rem 0;
 }
-main nav .secciones img{
-    width: 410px;
-    height: 550px;
-}
 main .imagenes a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.imagenes .secciones{
+    position:relative
+}
+.imagenes p{
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(245, 212, 212, 0.7);
+    font-size: 2rem;
+    height: 25vh;
+    width: 25vw;
+    transition-duration: 3s;
+}
+.imagenes .secciones:hover p{
+    display: flex;
+    margin-top: -55vh;
 }
                 /*MODAL CARRITO*/
 .modal .modal-dialog .modalCarrito{
     background-color: hsl(34, 57%, 70%);
     width: 30vw;
     height: 40vh;
-    overflow: hidden;
     display: flex;
-    flex-shrink: initial;
     justify-self: center;
     justify-content: center;
 }
 .modalCarrito p{
     text-align: center;
+}
+.btncarrito{
+    background-color: rgb(184, 165, 89);
+    width: 100%;
 }
                 /*MODAL USUARIO*/
 .modal{
@@ -104,7 +120,7 @@ body .modal-content{
     margin-bottom: 0;
     font-family: 'Zen Antique', serif;
 }
-.cuadro h5{
+.cuadro, #carrito h5{
     font-size: 1rem;
     font-family: 'Zen Antique', serif;
 }
@@ -115,20 +131,20 @@ body .modal-content{
 
 }
 SECTION .tarjetas img{
-    width: 46px;
-    height: 46px;
-    margin: 2vw;
+    margin: 2vh;
 }
 .menubajo a{
     text-decoration: none;
     color: rgb(46, 46, 46);
+    justify-content: space-around;
 
 }
-                    /*REDES SOCIALES*/
-nav .redes img{
-    width: 46px;
-    height: 46px;
+.columna1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+                    /*REDES SOCIALES*/
 nav .redes{
     display: flex;
     justify-content: space-between;

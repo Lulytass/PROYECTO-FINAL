@@ -16,4 +16,3 @@ function abreModalCarrito(){
 function cierraModalCarrito(){
     abrirCarrito.style.display = "none"
 }
-
