@@ -205,4 +205,8 @@ footer{
         height: 35vh;
 
     }
+    .imagenes p{
+        height: 35vh;
+        width: 85vw;
+    }
 }
