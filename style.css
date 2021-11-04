@@ -41,11 +41,18 @@ header .menu img{
 }
 main .imagenes a{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.imagenes img{
+    width: 100%;
 }
 .imagenes .secciones{
-    position:relative
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
 }
 .imagenes p{
     display: none;
@@ -53,13 +60,12 @@ main .imagenes a{
     text-align: center;
     background-color: rgba(245, 212, 212, 0.7);
     font-size: 2rem;
-    height: 25vh;
-    width: 25vw;
+    height: 22vh;
+    width: 22vw;
     transition-duration: 3s;
 }
 .imagenes .secciones:hover p{
     display: flex;
-    margin-top: -55vh;
 }
                 /*MODAL CARRITO*/
 .modal .modal-dialog .modalCarrito{
@@ -183,6 +189,10 @@ footer{
     }
     main .secciones img{
         border-radius: 1rem 1rem;
+    }
+    .imagenes p{
+        height: 22vh;
+        width: 80vw;
     }
 }
 @media (max-width: 575px){
