@@ -96,8 +96,9 @@ body .modal-content{
     margin-bottom: 5vh;
 }
 .articulos h5{
-    font-size: 1rem;
-    text-decoration: underline yellow;
+    font-size: 1.5rem;
+    font-family: 'Zen Antique', serif;
+    text-decoration: line-through 5px rgba(255, 255, 0, .5) ; 
 }
 .articulos .card{
     border: none;
@@ -106,7 +107,10 @@ body .modal-content{
     display: flex;
     justify-content: right;
     transition: 2s;
-
+}
+main .articulos div h6{
+    font-size: 1rem;
+    margin-top: 1vh;
 }
 .precio p{
     font-size: 1.5rem;
@@ -135,6 +139,15 @@ div .losFiltros{
 }
 .botonFiltro{
     margin: 6px;
+}
+.seVe label{
+    font-size: 1.5rem;
+    margin: 2vh 0;
+}
+.seVe input{
+    margin-right: 1vw;
+    width: 20px;
+    height: 20px;
 }
                     /*MENU BAJO*/
 .menubajo{

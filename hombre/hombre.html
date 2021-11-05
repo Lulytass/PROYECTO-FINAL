@@ -19,7 +19,7 @@
             <p class="text-center col-sm-12 col-md-12 col-lg-12">En compras mayores a $5000 dentro de Capital Federal el envio es GRATIS</p>
         </section>
         <nav class="row principal">
-            <img class="logo col-sm-12 col-md-9 col-lg-9" src="../imagenes/logo.png" alt="">
+            <img class="logo col-sm-12 col-md-9 col-lg-9" src="../imagenes/logo.png" alt="logo de la marca">
             <div class="menu col-sm-12 col-md-3 col-lg-3">
                 <a href="mailto:luly8608@gmail.com"><img src="../imagenes/chat.png" alt=""></a>
                 <img onclick="abreModal()" src="../imagenes/usuario.png" alt="">
@@ -71,15 +71,9 @@
     <div class="container">
         <button type="button" class="btn botonFiltro btn-outline-danger">Filtros</button>
         <div class="losFiltros row">
-            <p class="col-sm-4 col-md-4 col-lg-4 text-center">
-                Partes de arriba<input onclick="arriba()" type="checkbox">
-            </p>
-            <p class="col-sm-4 col-md-4 col-lg-4 text-center">
-                Partes de abajo<input onclick="abajo()" type="checkbox">
-            </p>
-            <p class="col-sm-4 col-md-4 col-lg-4 text-center">
-                Conjuntos<input onclick="conjunto()" type="checkbox">
-            </p>
+            <label class="col-sm-4 col-md-4 col-lg-4 text-center" for=""><input onclick="arriba()" type="checkbox">Partes de arriba</label>
+            <label class="col-sm-4 col-md-4 col-lg-4 text-center" for=""><input onclick="abajo()" type="checkbox">Partes de abajo</label>
+            <label class="col-sm-4 col-md-4 col-lg-4 text-center" for=""><input onclick="conjunto()" type="checkbox">Conjuntos</label>  
         </div>
     </div> 
     <main class="container">
