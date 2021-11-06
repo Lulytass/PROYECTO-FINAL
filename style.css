@@ -26,6 +26,7 @@ header .menu img{
 }
 .menu ul li{
  list-style: none;
+ cursor: pointer;
 }
 .menu ul{
     display: flex;
@@ -44,6 +45,8 @@ main .imagenes a{
     padding: 0;
     margin: 0;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .imagenes img{
     width: 100%;
@@ -63,6 +66,7 @@ main .imagenes a{
     height: 22vh;
     width: 22vw;
     transition-duration: 3s;
+    color: black;
 }
 .imagenes .secciones:hover p{
     display: flex;
@@ -191,8 +195,8 @@ footer{
         border-radius: 1rem 1rem;
     }
     .imagenes p{
-        height: 22vh;
-        width: 80vw;
+        height: 80vh;
+        width: 50vw;
     }
 }
 @media (max-width: 575px){

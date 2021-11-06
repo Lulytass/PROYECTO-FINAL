@@ -65,3 +65,12 @@ botonFiltro.addEventListener("click", function(){
         filtros.classList.add("losFiltros")
    }
 })
+
+
+
+const articulos = document.querySelectorAll(".articulos")
+
+let comprando = botonCompra.addEventListener("click", function(){
+    return articulos
+})
+

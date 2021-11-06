@@ -24,10 +24,15 @@ header .menu img{
     text-decoration: none;  
     color: black;
 }
-.menu{
-    display: flex;
-    justify-content: space-around;
-}
+.menu ul li{
+    list-style: none;
+    cursor: pointer;
+   }
+   .menu ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+   }
                 /*MODAL USUARIO*/
 .modal{
     background-color: rgba(128, 128, 128, .3);

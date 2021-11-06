@@ -25,8 +25,13 @@ header .menu img{
     color: black;
 
 }
-.menu{
+.menu ul li{
+ list-style: none;
+ cursor: pointer;
+}
+.menu ul{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
                 /*MODAL CARRITO*/
