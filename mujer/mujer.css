@@ -123,6 +123,9 @@ main .articulos div h6{
     font-family: 'Zen Antique', serif;
 
 }
+.precio p::before{
+  content: "$";
+}
 .articulos .card:hover .precio{
     justify-content: center;
     text-shadow: rgb(151, 151, 151) 2px 2px 1px;
@@ -146,7 +149,7 @@ div .losFiltros{
     margin: 6px;
 }
 .seVe label{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 2vh 0;
 }
 .seVe input{
