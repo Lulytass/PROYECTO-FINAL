@@ -1,4 +1,4 @@
-//              MODAL USUARIO
+//  MODAL USUARIO
 const abrir = document.querySelector("#contacto")
 
 function abreModal(){
@@ -8,9 +8,14 @@ function cierraModal(){
     abrir.style.display = "none"
 }
 //            CARRITO DE COMPRAS
+const abrirCarrito = document.querySelector("#carrito")
 
-//                   CHAT
-
+function abreModalCarrito(){
+    abrirCarrito.style.display = "flex"
+}
+function cierraModalCarrito(){
+    abrirCarrito.style.display = "none"
+}
                  //FILTROS
 let arriba1 = document.querySelectorAll(".arriba");
 let conjunto1 = document.querySelectorAll(".conjuntos");

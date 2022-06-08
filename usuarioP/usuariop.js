@@ -1,21 +1,3 @@
-//              MODAL USUARIO
-const abrir = document.querySelector("#contacto")
-
-function abreModal(){
-    abrir.style.display = "flex"
-}
-function cierraModal(){
-    abrir.style.display = "none"
-}
-//            CARRITO DE COMPRAS
-const abrirCarrito = document.querySelector("#carrito")
-
-function abreModalCarrito(){
-    abrirCarrito.style.display = "flex"
-}
-function cierraModalCarrito(){
-    abrirCarrito.style.display = "none"
-}
 //                  FILTROS
 let malla1 = document.querySelectorAll(".malla");
 let arriba1 = document.querySelectorAll(".arriba");
@@ -23,13 +5,12 @@ let conjunto1 = document.querySelectorAll(".conjuntos");
 let abajo1 = document.querySelectorAll(".abajo");
 
 function abajo(){
-    $consulta = "SELECT * FROM ecommerce WHERE filtro = 'arriba'";
-    // for(var i = 0; i< malla1.length; i++)
-    // malla1[i].classList.toggle("chau");
-    // for(var i = 0; i< arriba1.length; i++)
-    // arriba1[i].classList.toggle("chau");
-    // for(var i = 0; i< conjunto1.length; i++)
-    // conjunto1[i].classList.toggle("chau");
+    for(var i = 0; i< malla1.length; i++)
+    malla1[i].classList.toggle("chau");
+    for(var i = 0; i< arriba1.length; i++)
+    arriba1[i].classList.toggle("chau");
+    for(var i = 0; i< conjunto1.length; i++)
+    conjunto1[i].classList.toggle("chau");
 }
 function arriba(){
     for(var i = 0; i< abajo1.length; i++)
@@ -66,5 +47,12 @@ botonFiltro.addEventListener("click", function(){
         filtros.classList.add("losFiltros")
    }
 })
+                //BOTON MODIFICAR
 
-
+const modificacionesmodal = document.querySelector("#modificacionesmodal");
+function abreModificaciones(){
+    modificacionesmodal.style.display = "flex"
+}
+function cierraModificaciones(){
+    modificacionesmodal.style.display = "none"
+}
