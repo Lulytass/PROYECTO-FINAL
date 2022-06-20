@@ -47,12 +47,3 @@ botonFiltro.addEventListener("click", function(){
         filtros.classList.add("losFiltros")
    }
 })
-                //BOTON MODIFICAR
-
-const modificacionesmodal = document.querySelector("#modificacionesmodal");
-function abreModificaciones(){
-    modificacionesmodal.style.display = "flex"
-}
-function cierraModificaciones(){
-    modificacionesmodal.style.display = "none"
-}

@@ -27,11 +27,15 @@ header section h4{
     justify-content: center;
     align-items: center;
     display:flex;
-   }
-header .menu{
+    color: black;
     
-    background-color: #ffc107;
+   }
+header .menu li{
+    
+    background-color: #fff93c;
     border-radius: 15px;
+    margin-bottom: 8px;
+    list-style: none;
 }
 /*CARD PARA AGREGAR MERCADERIA*/
 div#modificar .btn{

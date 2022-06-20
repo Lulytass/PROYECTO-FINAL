@@ -60,7 +60,6 @@
                 $datos= mysqli_query($conexion, $consulta);
                 
                 ?>
-
                 <!--card para agregar productos-->
                 <div id="modificar" class="col-sm-12 col-md-4 col-lg-3">
                     <form class="card-body" method="POST" action="agregar.php" enctype="multipart/form-data">
@@ -79,67 +78,38 @@
                         <label>Filtro</label>
                         <input type="text" name="filtro" placeholder="filtro" required> 
                         <input type="submit" class="btn-warning btn" value="Ingresar"></button>                  
-                    </form>
-                    
+                    </form>   
                 </div>
-                <!-- MODAL PARA MODIFICAR PRODUCTOS-->
 
-                <div class="modal modalmodif" id="modificacionesmodal" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h6>Ingrese los nuevos datos de la prenda</h6>
-                                <button onclick="cierraModificaciones()" type="button" class= data-bs-dismiss="modal" aria-label="Close"><a href="modificaciones.php">X</a></button>
-                            </div>
-                            <div class="modal-body">
-                                <form class="card-body estilomodal"action="mod.php" method="POST" enctype="multipart/form-data">
-                                    <label>Imagen</label>
-                                    <input type="file" name="imagen" placeholder="imagen">                                    
-                                    <label>Tipo de prenda</label>
-                                    <input type="text" name="articulo" placeholder="Articulo" value="<?php echo $articulo;?>" required>
-                                    <label>Colores</label>
-                                    <input type="text" name="color" placeholder="Colores" value="<?php echo $color;?>" required>
-                                    <label>Talle</label>
-                                    <input type="text" name="talle" placeholder="Talle" value="<?php echo $talle;?>" required>
-                                    <label>Precio</label>
-                                    <input type="text" name="precio" placeholder="Precio" value="<?php echo $precio;?>" required> 
-                                    <label>Sexo</label>
-                                    <input type="text" name="sexo" placeholder="Sexo" value="<?php echo $sexo;?>" required> 
-                                    <label>Filtro</label>
-                                    <input type="text" name="filtro" placeholder="filtro" value="<?php echo $filtro;?>" required> 
-                                    <input class="boton btn-warning"type="submit" name="guardar_cambios" value="Guardar Cambios">
-                                </form>
-                            </div>
-                    </div>
-                </div>
-            </div>
             <?php
             //  recorro todos los registros y genero una CARD PARA CADA UNA
             while ($reg = mysqli_fetch_array($datos)) {?>
-                <div class="<?php echo $reg['filtro']?> card col-sm-12 col-md-4 col-lg-3">
-                    <img src="data:image/jpg;base64, <?php echo base64_encode($reg['imagen'])?>"  class="card-img-top" alt="ropa mujer">
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $reg['articulo']; ?></h5>
-                        <div>
-                            <h6>Colores</h6>
-                            <select name="OS">
-                                <option ><?php echo $reg['color'];?></option> 
-                                
-                            </select>
-                        </div>   
-                        <div>
-                            <h6>Talle</h6>
-                            <select name="OS">
-                                <option ><?php echo $reg['talle'];?></option> 
-                            </select>
+                    <div class="<?php echo $reg['filtro']?> card col-sm-12 col-md-4 col-lg-3">
+                        <form action="mod.php" method="POST" enctype="multipart/form-data">
+                        <img src="data:image/jpg;base64, <?php echo base64_encode($reg['imagen'])?>"  class="card-img-top" alt="ropa mujer">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $reg['articulo']; ?></h5>
+                            <div>
+                                <h6>Colores</h6>
+                                <select name="OS">
+                                    <option ><?php echo $reg['color'];?></option> 
+                                </select>
+                            </div>   
+                            <div>
+                                <h6>Talle</h6>
+                                <select name="OS">
+                                    <option ><?php echo $reg['talle'];?></option> 
+                                </select>
+                            </div>
+                            <div class="precio">
+                                <p><?php echo $reg['precio']; ?></p>
+                            </div>   
+                            <button type="button" class="btn modificar btn-warning"><a href="mod.php?id=<?php echo $reg['id'];?>">Modificar</a></button>                  
+                            <button type="button" id="eliminar" class="btn btn-warning"><a href="borrar.php?id=<?php echo $reg['id'];?>">Eliminar</a></button>                
                         </div>
-                        <div class="precio">
-                            <p><?php echo $reg['precio']; ?></p>
-                        </div>   
-                        <button type="button" onclick="abreModificaciones()" class="btn modificar btn-warning"><a href="mod.php?id=<?php echo $datos1['id'];?>">Modificar</a></button>                  
-                        <button type="button" id="eliminar" class="btn btn-warning"><a href="borrar.php?id=<?php echo $reg['id'];?>">Eliminar</a></button>                
+                        </form>
                     </div>
-                </div>
+                
             <?php } ?>
         </article>        
     </main>
